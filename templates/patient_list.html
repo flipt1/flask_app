@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+
+<h1>Patient List</h1>
+
+        <ul>
+        {% for patient in patients %}
+            <li>{{ patient.name }} ({{ patient.age }})</li>
+        {% endfor %}
+        </ul>

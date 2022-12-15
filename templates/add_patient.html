@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h1>Add Patient</h1>
+
+    <form action="" method="post">
+    {{ patient_form.csrf_token }}
+    <label for="name">Name:</label><br>
+    {{ patient_form.name }}<br>
+    <label for="age">Age:</label><br>
+    {{ patient_form.age }}<br>
+    <label for="gender">Gender:</label><br>
+    {{ patient_form.gender }}<br>
+    <label for="address">Address:</label><br>
+    {{ patient_form.address }}<br>
+    <label for="phone">Phone:</label><br>
+    {{ patient_form.phone }}<br>
+    <br>
+    <input type="submit" value="Submit">
+    </form>
+
+{% endblock %}
